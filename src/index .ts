@@ -44,3 +44,44 @@
 
 
 // ***********************Function********************
+
+// optional function 
+// type functype =(n:number,m:number,l?:number) =>number 
+
+// const func:functype =(a,b,l)=>{
+//     if (typeof l === "undefined") return a*b
+//     return a*b*l
+// }
+
+// func(23,432)
+
+// default function 
+
+// type functype =(n:number,m:number,l?:number) =>number 
+
+// const func:functype =(a,b,l=20)=>{
+//     if (typeof l === "undefined") return a*b
+//     return a*b*l
+// }
+
+// func(23,432)
+
+
+// Rest Operator
+
+
+// type functype =(...m:number[]) =>number[] 
+
+
+// const func:functype =(...m)=>{
+//     return m;
+// }
+// func(23,56,8,23,78) 
+
+
+//  Type Assertion 
+
+// const btn = document.getElementById("btn") as HTMLElement
+// const btn = document.getElementById("btn") !
+// const btn = <HTMLElement>document.getElementById("btn") 
+// btn.onclick;
