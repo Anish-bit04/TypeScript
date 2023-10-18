@@ -135,3 +135,14 @@
 // ConstructorParameters<Type>
 // Return Type<Type>
 // Instance Type<Type>
+
+
+// Generics
+
+const func = <T>(n :T):T=>{
+return n;
+} 
+
+const ans = func(20)
+const ans1 = func("gr")
+const ans2 = func(true)
