@@ -18,7 +18,6 @@
 
 // ***********************Object********************
 
-
 // interface newobj{
 //     height:number;
 //     weight:number;
@@ -42,11 +41,10 @@
 
 // }
 
-
 // ***********************Function********************
 
-// optional function 
-// type functype =(n:number,m:number,l?:number) =>number 
+// optional function
+// type functype =(n:number,m:number,l?:number) =>number
 
 // const func:functype =(a,b,l)=>{
 //     if (typeof l === "undefined") return a*b
@@ -55,9 +53,9 @@
 
 // func(23,432)
 
-// default function 
+// default function
 
-// type functype =(n:number,m:number,l?:number) =>number 
+// type functype =(n:number,m:number,l?:number) =>number
 
 // const func:functype =(a,b,l=20)=>{
 //     if (typeof l === "undefined") return a*b
@@ -66,22 +64,74 @@
 
 // func(23,432)
 
-
 // Rest Operator
 
-
-// type functype =(...m:number[]) =>number[] 
-
+// type functype =(...m:number[]) =>number[]
 
 // const func:functype =(...m)=>{
 //     return m;
 // }
-// func(23,56,8,23,78) 
+// func(23,56,8,23,78)
 
-
-//  Type Assertion 
+//  Type Assertion
 
 // const btn = document.getElementById("btn") as HTMLElement
 // const btn = document.getElementById("btn") !
-// const btn = <HTMLElement>document.getElementById("btn") 
+// const btn = <HTMLElement>document.getElementById("btn")
 // btn.onclick;
+
+// const form = document.getElementById("form") as HTMLFormElement;
+// const myinput = document.querySelector("form > input") as HTMLInputElement;
+
+// form.onsubmit = (e:SubmitEvent)=>{
+//     e.preventDefault();
+//     const Value = Number(input.value)
+//     console.log(Value);
+//     console.log(typeof input.value)
+// }
+
+
+// form.onsubmit = (e) => {
+//   e.preventDefault();
+//   const Value = Number(myinput.value);
+//   console.log(Value);
+//   const h2 = document.createElement("h2") as HTMLElement;
+// const body = document.querySelector("body") as HTMLElement;
+
+// h2.textContent= String(Value +20)
+// body.append(h2)
+// }
+
+
+// /////////////////////////////////////////////////
+
+// interface Person {
+//     [key: string ]: string,
+   
+// }
+
+// const myObj = {
+//     name:"Anish",
+//     email: "anish@gmail.com"
+// }
+
+// const getname = ():string=>{
+//     return myObj["email"]
+// }
+
+
+///////////////////////////////////////////////
+// Type Utility
+// Partial<Type>
+// Required<Type> 
+// Readonly<Type>
+// Record<Keys, Type>
+// Pick<Type, Keys>
+// Omit<Type, Keys>
+// Exclude<Type, ExcludedUnion>
+// Extract<Type, Union>
+// NonNullable<Type>
+// Parameters<Type>
+// ConstructorParameters<Type>
+// Return Type<Type>
+// Instance Type<Type>
